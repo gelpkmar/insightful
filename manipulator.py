@@ -1,4 +1,6 @@
 import random
+from pixelsort import pixelsort
+from PIL import Image
 
 class Manipulator:
     """ Manipulates an image according to data passed in as arguments """
@@ -18,3 +20,18 @@ class Manipulator:
             else:
                 print("Something went wrong, please try again.")
         return self.hex_list
+
+    def sort_pixels(self, new_filename, user_input, avg_data, i):
+        avg = avg_data
+        i += 63
+        # for i in range(30):
+        #     a = Image.open(new_filename)
+        #     avg += i*10
+        #     b = pixelsort(a, angle=90, clength=avg)
+        #     c = pixelsort(b, clength=avg)
+        #     c.save(f"generated_files/gif/the_new{i}.png")
+        a = Image.open(new_filename)
+        b = pixelsort(a, angle=90, clength=avg)
+        c = pixelsort(b, clength=avg)
+        c.save(f"generated_files/{user_input}_altered.png")
+        print(f"Finished! You can see your image at generated_files/{user_input}_altered.png")
