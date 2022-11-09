@@ -3,13 +3,8 @@ from image import Image
 from manipulator import Manipulator
 
 #constant which defines the original file to be edited.
-# ORIGINAL_FILE = "../altered/altered_home_min.jpg"
-ORIGINAL_FILE = "original_files/Mongolian_Steppe_original_min.jpg"
+ORIGINAL_FILE = "original_files/Korea_Guards.JPG"
 AMOUNT_OF_IMAGES = 1 # Change this value to change the number of individual images to be created.
-
-# image = Image(ORIGINAL_FILE)
-
-# current_hex_list = image.create_hex_list()
 
 user_input = str(input("What do you want the new file be called? Please provide the absolute path ('.jpg' will be added at the end): "))
 new_filename = str(user_input+".jpg")
@@ -22,8 +17,6 @@ b_humidity_list = list(bytes(humidity.encode()))
 air_pressure = str(input("What was the air pressure that day? Please provide in psi: "))
 int_air_pressure = int(air_pressure)
 b_air_pressure_list = list(bytes(humidity.encode()))
-
-# manipulator = Manipulator(current_hex_list)
 
 for i in range(AMOUNT_OF_IMAGES):
     image = Image(ORIGINAL_FILE)

@@ -23,7 +23,6 @@ class Manipulator:
 
     def sort_pixels(self, new_filename, user_input, avg_data, i):
         avg = avg_data
-        i += 63
         # for i in range(30):
         #     a = Image.open(new_filename)
         #     avg += i*10
