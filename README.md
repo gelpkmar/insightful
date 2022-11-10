@@ -14,3 +14,9 @@ At the time the image is taken, also a range of other data about the cameras env
 5. A new .png image is created as the final product.
 
 One could argue that the data collected is now a part of the image, the camera (mis) used as a sensor among others. Fused into one with the image, the data is visualized as what it is, an atmospherical sensation. I call them: "Insights".
+
+## Caveats and things I'd like to fix once I get to it
+
+1. Crrently no values below 0 will work (e.g. no temperature beneath 0).
+2. Only values from 0 to 99 will work, whereas values below 10 have to be written with two digits (e.g 01, 02, etc.)
+3. As the script doesn't check for the .jpg structure, it may completely break the file. If this happens, just rerun the script again with the same values. The random selection of spots in the hex-array will work eventually.
