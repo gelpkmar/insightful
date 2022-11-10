@@ -1,6 +1,6 @@
 # insightful
 
-This is the script used to create the files displayed in the following post: 
+This is the script used to create the files displayed in the following post: https://altereduniverse.ch/posts/7
 
 ## (Mis-) Using a camera as a sensor among many.
 
